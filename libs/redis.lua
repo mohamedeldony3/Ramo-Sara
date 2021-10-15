@@ -269,13 +269,14 @@ print('\27[0;33m>>'..[[
 
 
 
- ____
-/ __ \____ _____ ___  ____
-/ /_/ / __ `/ __ `__ \/ __ \
-/ _, _/ /_/ / / / / / / /_/ /
-/_/ |_|\__,_/_/ /_/ /_/\____/ ¦ Dev : @Ramo41
-¦ Dev : @E77710
-¦ Source Ramo41 BY @T_O_Y_S
+▀█████████▄   ▄██████▄     ▄████████    ▄████████
+  ███    ███ ███    ███   ███    ███   ███    ███
+  ███    ███ ███    ███   ███    █▀    ███    █▀
+ ▄███▄▄▄██▀  ███    ███   ███          ███
+▀▀███▀▀▀██▄  ███    ███ ▀███████████ ▀███████████ ¦ Dev : @TH3BS
+  ███    ██▄ ███    ███          ███          ███ ¦ Dev : @BLCON
+  ███    ███ ███    ███    ▄█    ███    ▄█    ███
+▄█████████▀   ▀██████▀   ▄████████▀   ▄████████▀  ¦ Source The3Boss
 ---------------------------------------------------------------------
 ]]..'\027[0m')
 print('\27[0;31mTH3BOSS_ERROR : \27[1;31m Could Not Connect To \27[0;31mRedis\27[1;31m [\27[0;31m'..err..'\27[0m\27[1;31m] \27[0m\n\n')
@@ -285,7 +286,7 @@ if SUDO_ID then
 https.request('https://api.telegram.org/bot'..TokenBot..'/sendMessage?chat_id='..SUDO_ID..'&text='..URL.escape(Text)..'&parse_mode=Markdown')
 end
 os.exit()
---client.error('connection error: ' .. err)
+--client.error('connection error: ' .. err) 
 end
 end
 
@@ -792,20 +793,21 @@ local function connect_tcp(socket, parameters)
 
 
 
-  ____
- / __ \____ _____ ___  ____
- / /_/ / __ `/ __ `__ \/ __ \
- / _, _/ /_/ / / / / / / /_/ /
- /_/ |_|\__,_/_/ /_/ /_/\____/ ¦ Dev : @Ramo41
- ¦ Dev : @E77710
- ¦ Source Ramo41 BY @T_O_Y_S
+▀█████████▄   ▄██████▄     ▄████████    ▄████████
+  ███    ███ ███    ███   ███    ███   ███    ███
+  ███    ███ ███    ███   ███    █▀    ███    █▀
+ ▄███▄▄▄██▀  ███    ███   ███          ███
+▀▀███▀▀▀██▄  ███    ███ ▀███████████ ▀███████████ ¦ Dev : @TH3BS
+  ███    ██▄ ███    ███          ███          ███ ¦ Dev : @BLCON
+  ███    ███ ███    ███    ▄█    ███    ▄█    ███
+▄█████████▀   ▀██████▀   ▄████████▀   ▄████████▀  ¦ Source The3Boss
 ---------------------------------------------------------------------
 ]]..'\027[0m')
 	print('\27[0;31mTH3BOSS_ERROR : \27[1;31m Could Not Connect To \27[0;31mRedis\27[1;31m '..host..':'..port..' [\27[0;31m'..err..'\27[0m\27[1;31m] \27[0m\n\n')
 	print('\27[1;33mTH3BOSS_INFORMAION : \27[0;36m Run service Redis in This Command : \27[1;36m\n\n»» service redis start \27[0m\n\n\n')
 	os.exit()
     --redis.error('could not connect to '..host..':'..port..' ['..err..']')
-    end
+    end 
     socket:setoption('tcp-nodelay', parameters.tcp_nodelay)
     return socket
 end
